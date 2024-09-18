@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft-To Do</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav-left">
+                <i class="ri-function-fill icon"></i>
+                <h4>To Do</h4>
+            </div>
+            <div id="nav-center">
+                <div id="search">
+                    <i class="ri-search-line icon-s"></i>
+                </div>
+            </div>
+            <div id="nav-right">
+                <i class="ri-settings-5-line icon"></i>
+                <i class="ri-question-mark icon"></i>
+                <i class="ri-notification-3-fill icon"></i>
+                <h4>Log in</h4>
+            </div>
+        </div>
+        <div id="task">
+            <div id="task-left">
+                <div id="nav-icon">
+                    <i class="ri-menu-line left-icon" id="catagory-menuicon"></i>
+                </div>
+                <div id="catagory">
+                    <div class="catagory1 catagoris catagory-click">
+                        <i class="ri-sun-line left-icon"></i>
+                        <a href="#" class="catagoris-option">My Day</a>
+                    </div>
+                    <div class="catagory2 catagoris">
+                        <i class="ri-star-line left-icon"></i>
+                        <a href="#" class="catagoris-option">Important</a>
+                    </div>
+                    <div class="catagory3 catagoris">
+                        <i class="ri-calendar-2-line left-icon"></i>
+                        <a href="#" class="catagoris-option">Planned</a>
+                    </div>
+                    <div class="catagory4 catagoris">
+                        <i class="ri-user-4-line left-icon"></i>
+                        <a href="#" class="catagoris-option">Assigned to me</a>
+                    </div>
+                    <div class="catagory6 catagoris">
+                        <i class="ri-home-5-line left-icon"></i>
+                        <a href="#" class="catagoris-option">Task</a>
+                    </div>
+                </div>
+                <hr>
+                <div id="creat-group">
+                    <div id="group-left">
+                        <i class="ri-add-line left-icon group-icon"></i>
+                        <input type="text"id="add-group" placeholder="New list">
+                    </div>
+                    <button id="creating-btn">
+                        <i class="ri-add-box-fill left-icon group-icon"></i>
+                    </button>
+                </div>
+                <div id="bottomIcon">
+                    <div id="bottom-icon">
+                            <i class="ri-mail-line bottom-icon"></i>
+                            <i class="ri-calendar-2-line bottom-icon"></i>
+                            <i class="ri-group-line bottom-icon"></i>
+                            <i class="ri-attachment-2 bottom-icon"></i>
+                            <i class="ri-check-line bottom-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="task-right">
+               <div id="task-nav">
+                    <div id="left">
+                     <i class="ri-menu-line task-icon"></i>
+                     <h3>My Day</h3>
+                     <i class="ri-more-line task-icon"></i>
+                    </div>
+                    <div id="right">
+                        <div class="right-nav">
+                          <i class="ri-arrow-up-down-line task-icon"></i>
+                          <span>Sort</span>
+                          <span class="hover">Sort</span>
+                        </div>
+                        <div class="right-nav">
+                          <i class="ri-layout-left-2-line task-icon"></i>
+                          <span>Group</span>
+                          <span class="hover">Group</span>
+                        </div>
+                        <div class="right-nav">
+                           <i class="ri-lightbulb-fill task-icon"></i>
+                            <span>Suggestion</span>
+                            <span class="hover">Suggestion</span>
+                        </div>
+                    </div>
+               </div>
+               <p id="date"></p>
+               <div id="adding-task">
+                     <div id="task-box">
+                        <div id="task-adding">
+                           <i class="ri-checkbox-blank-circle-line taskbox-icon"></i>
+                           <input type="text" id="input-task" placeholder="Add a task">
+                         </div>
+                    </div>
+                    <div id="task-system">
+                        <div id="task-function">
+                            <div id="task-icon">  
+                                <i class="ri-calendar-2-line taskfunction-icon"></i>
+                                <i class="ri-notification-3-line taskfunction-icon"></i>
+                                <i class="ri-repeat-fill taskfunction-icon"></i>
+                            </div>
+                            <button id="btn-add" >Add</button>
+                        </div>
+                    </div>
+                    <div id="show-task">
+                        <div id="show-tasklist">
+                            <ul id="list-container">
+                                 <!-- <li>
+                                    <i class="  list-icon1 ri-checkbox-blank-circle-line"></i>
+                                    <span>hhhhh</span>
+                                    <i class=" list-icon2 ri-star-line "></i>
+                                </li>-->
+                            </ul>
+                        </div>
+
+                    </div>
+               </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./JS/script.js"></script>
+    
+</body>
+</html>
